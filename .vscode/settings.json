@@ -1,0 +1,26 @@
+{
+  "editor.semanticHighlighting.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "entity.name.tag.xml",
+        "settings": {
+          "foreground": "#0057D9",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "punctuation.definition.tag.xml",
+        "settings": {
+          "foreground": "#666666"
+        }
+      },
+      {
+        "scope": "text.xml",
+        "settings": {
+          "foreground": "#C00000"
+        }
+      }
+    ]
+  }
+}
