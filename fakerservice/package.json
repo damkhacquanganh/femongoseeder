@@ -1,0 +1,43 @@
+{
+  "name": "faker-service",
+  "version": "2.0.0",
+  "description": "High-performance fake data generator microservice with Fastify + Piscina",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:gc": "node --expose-gc src/index.js",
+    "dev": "node --watch src/index.js",
+    "dev:gc": "node --watch --expose-gc src/index.js",
+    "test": "node --test",
+    "lint": "eslint src/",
+    "benchmark": "node scripts/benchmark.js"
+  },
+  "dependencies": {
+    "fastify": "^4.28.1",
+    "@fastify/cors": "^9.0.1",
+    "piscina": "^4.7.0",
+    "@faker-js/faker": "^9.2.0",
+    "json-schema-faker": "^0.5.6",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "lru-cache": "^11.0.2",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "pino-pretty": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "faker",
+    "mock-data",
+    "json-schema",
+    "fastify",
+    "microservice"
+  ],
+  "author": "Quang Anh",
+  "license": "MIT"
+}
